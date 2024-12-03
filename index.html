@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUXORIA</title>
 <style>
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -233,6 +233,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid white;
 }
 .project-2{
     width: 40%;
@@ -242,9 +244,11 @@
     align-self: last baseline;
     display: flex;
     align-items: end;
-    background-image: url(luxoria-images/download\ \(2\).jpeg);
+    background-image: url(luxoria-images/Weiss\ Modern\ LED\ Ceiling\ Light\ Dining\ Room\ Kitchen\ White-Warm\ white.jpeg);
     background-size: cover;
     border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid white;
 }
 .project-page2{
     width: 100%;
@@ -268,6 +272,8 @@
     background-size:cover;
     background-repeat: no-repeat;
     border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid white;
 }
 .project-4{
     width: 30%;
@@ -279,6 +285,8 @@
     background-image: url(luxoria-images/Magnetische\ Schienen-Deckenleuchten\ Kühlergrilllicht\ 12W-3000K\ \(warmes\ Licht\).jpeg);
     background-size: cover;
     border-radius: 25px;
+    overflow: hidden;
+    border: 5px solid white;
 }
 .project-content{
     width: 100%;
@@ -287,7 +295,10 @@
     align-items: center;
     gap: 2%;
     padding-left: 5%;
-    /* background-color: aqua; */
+    background-color:white;
+    opacity: 0;
+    transition: ease-in;
+
 }
 .project-content h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -299,7 +310,225 @@
     font-size: 18px;
     color: black;
 }
+.project-1:hover .project-content{
+    opacity: 1;
+}
+.project-2:hover .project-content{
+    opacity: 1;
+}
+.project-3:hover .project-content{
+    opacity: 1;
+}
+.project-4:hover .project-content{
+    opacity: 1;
+}
 
+/* ...................services....................... */
+
+.servicepage-container{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: black;
+    /* background-position: center; */
+}
+.service-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 15%;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(245,132,31);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.service-card-container{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.service-card{
+    width: 380px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    /* background-color: rgb(42, 16, 192); */
+    /* border: 1px solid  white; */
+    box-shadow: 1px 3px 10px 5px rgba(240, 233, 233, 0.3);
+}
+.service-card:hover{
+    box-shadow: 1px 3px 10px 5px rgb(245,132,31);
+    transition:scaleY(1.04)
+}
+.service-card img{
+    width: 100px;
+}
+.service-card h3{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.service-card p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 200;
+    line-height: 25px;
+}
+.service-card button{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgb(247 148 29);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+/* ......................banner-2........................... */
+.banner2-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(luxoria-images/bannner2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: aqua;
+}
+.banner2-container h2{
+    font-size: 62px;
+    color: rgb(245,132,31);
+}
+.banner2-container p{
+    font-size: 42px;
+    color:rgb(216, 132, 59);
+}
+
+
+/* ................why.................................... */
+
+.why-choose-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+}
+.why-title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-left: 15%;
+    align-items: center;
+    font-size: 22px;
+    color: rgb(245,132,31);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+
+.stats-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+.stat-box {
+    width:30% ;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    /* background-color: rgb(48, 63, 201); */
+    /* border: 1px solid rgb(245,132,31); */
+    background-image: url(luxoria-images/iphone\ wallpapered\ simple\ christmas\ aesthetic.jpeg);
+    background-size: cover;
+}
+.stat-box img {
+    width: 80px;
+    margin-top: 20%;
+}
+
+.stat-box p {
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(245,132,31);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.stat-box h3 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+/* ................footer............................... */
+
+.footer-container{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(18,18,18);
+}
+.footer-content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(18,18,18); */
+}
+.footer-content img{
+    margin-left: 5%;
+}
+.footer-contact{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(42, 30, 174); */
+}
+.footer-contact img{
+    width: 50px;
+}
+.footer-bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua;   */
+    border-top: 1px solid white;
+}
 </style>
 </head>
 <body>
@@ -378,7 +607,7 @@
                 <div class="section">
                   <h2>MAGNETIC LIGHTS</h2>
                   <div class="box">
-                    <img src="luxoria-images/download.jpeg" alt="">
+                    <img src="luxoria-images/SQUARES next 50x2 LED natynkowy - oprawy natynkowe - AQForm.jpeg" alt="">
                   </div>
                   <div class="box">
                     <img src="luxoria-images/AQForm - producent nowoczesnego oświetlenia.jpeg" alt="">
@@ -425,7 +654,115 @@
               </div>
             </div> 
         </div>
+<!-- ......................services..................... -->
+      <div class="servicepage-container">
+        <div class="service-title">
+          <h2>OUR SERVICES</h2>
+        </div>
+        <div class="service-card-container">
+          <div class="service-card">
+            <img src="luxoria-images/icons8-bulb-50.png" alt="">
+            <h3>SERVICE 1</h3>
+            <p>At Luxaura, we specialize in creating captivating <br>
+             lighting experiences for every space. Our wide <br>
+             range of services ensures that your interiors and<br>
+             bexteriors shine with elegance, functionality, and style.</p><br>
+            <button>Read More</button>
+
+          </div>
+          <div class="service-card">
+            <img src="luxoria-images/icons8-bulb-50.png" alt="">
+            <h3>SERVICE 2</h3>
+            <p>At Luxaura, we specialize in creating captivating <br>
+              lighting experiences for every space. Our wide <br>
+              range of services ensures that your interiors and<br>
+              bexteriors shine with elegance, functionality, and style.</p><br>
+
+            <button>Read More</button>
+          </div>
+          <div class="service-card">
+            <img src="luxoria-images/icons8-bulb-50.png" alt="">
+            <h3>SERVICE 3</h3>
+            <p>At Luxaura, we specialize in creating captivating <br>
+              lighting experiences for every space. Our wide <br>
+              range of services ensures that your interiors and<br>
+              bexteriors shine with elegance, functionality, and style.</p><br>
+
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+<!-- ..........................banner-2..................................... -->
+     <div class="banner2-container">
+        <h2>PREMIUM LIGHTING</h2>
+        <p>For Every Moment</p>
+     </div>
+
+<!-- .............................why....................................... -->
+<section class="why-choose-us">
+   <div class="why-title">
+    <h2>WHY US</h2>
+   </div>
+  <div class="stats-container">
+      <div class="stat-box">
+           <img src="luxoria-images/icons8-project-50.png" alt="">
+           <p class="number" data-target="100">0</p>
+          <h3>Project Done</h3>
+      </div>
+      <div class="stat-box">
+           <img src="luxoria-images/icons8-group-50.png" alt="">
+           <p class="number" data-target="90">0</p>
+          <h3>Happy Clients</h3>
+      </div>
+      <div class="stat-box">
+          <img src="luxoria-images/icons8-medal-50.png" alt="">
+          <p class="number" data-target="50">0</p>
+          <h3>Awards</h3>
+      </div>
+  </div>
+</section>
+<!-- .....................footer.......................... -->
+     <div class="footer-container">
+       <div class="footer-content">
+         <img src="luxoria-images/logo5.png" alt="">
+          <div class="footer-contact">
+            <img src="luxoria-images/icons8-facebook-50.png" alt="">
+            <img src="luxoria-images/icons8-instagram-50 (1).png" alt="">
+            <img src="luxoria-images/icons8-whatsapp-50.png" alt="">
+          </div>  
+       </div>
+       <div class="footer-bottom">
+         <p>&copy; Copyright 2024 - Hand Coded By  HJ Web Designs</p>
+       </div>
+     </div>
    
 </div>
+<script>
+  const numbers = document.querySelectorAll('.number');
+let animationTriggered = false;
+
+const container = document.querySelector('.why-choose-us'); // Target the specific container
+
+container.addEventListener('mouseenter', () => {
+  if (!animationTriggered) {
+    animationTriggered = true; // Ensure animation runs only once on hover
+    numbers.forEach((num) => {
+      const target = +num.getAttribute('data-target'); // Target number
+      let count = 0; // Start from 0
+
+      const updateCounter = () => {
+        if (count < target) {
+          count += Math.ceil(target / 100); // Increment step
+          if (count > target) count = target; // Ensure no overshoot
+          num.textContent = count;
+          requestAnimationFrame(updateCounter); // Smooth animation
+        }
+      };
+
+      updateCounter();
+    });
+  }
+});
+</script>
 </body>
 </html>
